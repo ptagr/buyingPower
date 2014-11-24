@@ -67,7 +67,6 @@ router.route('/')
                                 // all data is here now
                                 // look through the returnedData and do whatever processing
                                 // you want on it right here
-                                res.header('Access-Control-Allow-Credentials','true')
                                 res.send(responsearray);
                             }
                         }
