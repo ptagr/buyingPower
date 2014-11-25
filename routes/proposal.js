@@ -2,7 +2,9 @@ var express = require('express');
 var router = express.Router();
 var request = require("request");
 var _ = require('underscore')._;
-var postmark = require("postmark")(process.env.POSTMARK_API_KEY)
+var postmark = require("postmark")(process.env.POSTMARK_API_KEY);
+HttpStatus = require('httpstatus');
+
 
 router.route('/')
     .get(function (req, res) {
@@ -19,7 +21,7 @@ router.route('/')
             }
             console.info("Sent to postmark for delivery")
         });
-       res.send()
+       res.send(HttpStatus.OK);
     });
 
 
