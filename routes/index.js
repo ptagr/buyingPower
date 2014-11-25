@@ -32,8 +32,6 @@ router.get('/', function(req, res) {
             if(err)
                 throw err;
             console.log("entry saved");
-            res.redirect(proposalURL+'?action=accept');
-
         });
 
         offerCollection.findOne({itemId : '381064177054'}, function(err, thor) {
