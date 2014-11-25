@@ -29,6 +29,7 @@ router.route('/')
                 if (!error2 && response2.statusCode === 200) {
                     var responseObject = {};
                     var itm = body2.Item;
+                    var randomnumber=Math.floor(Math.random()*110)
 
 
                     responseObject.iteminfo = {
@@ -50,7 +51,7 @@ router.route('/')
 
                     responseObject.quantityInfo = {
                         sold: itm.QuantitySold,
-                        available: '50'
+                        available: randomnumber
                     };
 
                     responseObject.shippingInfo = {
