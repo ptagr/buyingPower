@@ -1,0 +1,98 @@
+.item-grid {
+    width: 825px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.loader {
+    height: 30px;
+    margin-left: 385px;
+}
+
+.item-box {
+    float: left;
+    box-sizing: border-box;
+    width: 254px;
+    margin: 0 5px 10px 5px;
+    /*border: 1px solid red;*/
+}
+
+.checkmark {
+    height: 30px;
+    position: absolute;
+    margin: 5px;
+    display: none;
+}
+
+.img-box {
+    border: 1px solid #DDD;
+    text-align: center;
+}
+
+.item-info {
+    padding: 7px;
+}
+
+.item-name {
+    color: royalblue;
+}
+
+.item-price {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.action-panel {
+    width: 360px;
+    margin-left: 10px;
+}
+
+.mouseover-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-details {
+    display: none;
+    font-size: 14px;
+}
+
+.item-details div {
+    margin-top: 5px;
+}
+
+.seller-details h6 {
+    font-weight: bold;
+    margin: -10px 0 5px;
+}
+
+.seller-details {
+    font-size: 14px;
+}
+
+.feedback-star {
+    position: absolute;
+    margin: -3px 0 0 -2px;
+}
+
+.proposal {
+    display: none;
+}
+
+.proposal-option {
+    margin-bottom: 7px;
+}
+
+.duration {
+    margin-top: 20px;
+}
+
+.proposal-label {
+    display: inline-block;
+    width: 70px;
+}
+
+.submit-btn {
+    font-size: 14px;
+    float: right;
+}
