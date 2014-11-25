@@ -98,7 +98,7 @@ router.route('/accept')
                         if(err)
                             throw err;
                         console.log("entry saved");
-                        res.redirect(proposalURL+'?action=accept');
+                        res.redirect(proposalURL+'?action=accept&itemid='+resource.itemId);
 
                     });
 

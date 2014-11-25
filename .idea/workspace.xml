@@ -48,9 +48,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="4623" max-vertical-offset="5265">
               <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
-              <folding>
-                <marker date="1416903004000" expanded="false" signature="1622:1692" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,8 +56,8 @@
       <file leaf-file-name="proposal.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/proposal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="2040">
-              <caret line="83" column="30" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="2040">
+              <caret line="100" column="64" selection-start-line="100" selection-start-column="58" selection-end-line="100" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -98,7 +96,7 @@
       <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="450">
+            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="450">
               <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding />
             </state>
@@ -108,7 +106,7 @@
       <file leaf-file-name="negotiator.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/js/negotiator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="3615">
+            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="3690">
               <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
               <folding />
             </state>
@@ -118,10 +116,10 @@
       <file leaf-file-name="proposalView.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/proposalView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6640625" vertical-offset="0" max-vertical-offset="1305">
-              <caret line="71" column="26" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="26" />
+            <state vertical-scroll-proportion="1.8046875" vertical-offset="0" max-vertical-offset="1335">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding>
-                <marker date="1416893560000" expanded="false" signature="1078:1148" placeholder="..." />
+                <marker date="1416940689000" expanded="true" signature="1078:1148" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -138,8 +136,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/lib/emailer.coffee.js" />
-        <option value="$PROJECT_DIR$/views/proposalView.html" />
-        <option value="$PROJECT_DIR$/routes/proposal.js" />
         <option value="$PROJECT_DIR$/routes/items.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
@@ -150,6 +146,8 @@
         <option value="$PROJECT_DIR$/views/confirm.ejs" />
         <option value="$PROJECT_DIR$/views/optin.ejs" />
         <option value="$PROJECT_DIR$/routes/confirm.js" />
+        <option value="$PROJECT_DIR$/routes/proposal.js" />
+        <option value="$PROJECT_DIR$/views/proposalView.html" />
       </list>
     </option>
   </component>
@@ -201,8 +199,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,6 +265,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,11 +527,12 @@
       <workItem from="1416903226169" duration="548000" />
       <workItem from="1416903960246" duration="579000" />
       <workItem from="1416939218585" duration="83000" />
+      <workItem from="1416939563113" duration="1074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31537000" />
+    <option name="totallyTimeSpent" value="32611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="820" extended-state="6" />
@@ -905,9 +904,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4623" max-vertical-offset="5265">
           <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
-          <folding>
-            <marker date="1416903004000" expanded="false" signature="1622:1692" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -926,14 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="300" max-vertical-offset="1065">
           <caret line="20" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/proposal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="2040">
-          <caret line="83" column="30" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -967,7 +956,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="450">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="450">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding />
         </state>
@@ -981,12 +970,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/proposal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="2040">
+          <caret line="100" column="64" selection-start-line="100" selection-start-column="58" selection-end-line="100" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/proposalView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6640625" vertical-offset="0" max-vertical-offset="1305">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="26" />
+        <state vertical-scroll-proportion="1.8046875" vertical-offset="0" max-vertical-offset="1335">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding>
-            <marker date="1416893560000" expanded="false" signature="1078:1148" placeholder="..." />
+            <marker date="1416940689000" expanded="true" signature="1078:1148" placeholder="..." />
           </folding>
         </state>
       </provider>

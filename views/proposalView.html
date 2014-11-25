@@ -69,10 +69,12 @@
     $(document).ready(function(){
         var urlVars = getUrlVars();
 
+        var link = "http://protected-oasis-8857.herokuapp.com/optin?itemid="+ urlVars['itemid'];
         if(urlVars['action'] == 'accept'){
             $('#textArea1').text("Congratulations, You have accepted the negotiator's deal !!!!");
         }else{
-            $('#textArea1').text("Thank you for your response, You have rejected the negotiator's deal.");
+            $('#textArea1').text("Thank you for your response, You have rejected the negotiator's deal. \n" +
+                    "Click here to see this deal : "+link);
         }
     });
 
