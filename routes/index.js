@@ -14,7 +14,7 @@ router.get('/', function(req, res) {
         }
         var offerCollection = db.collection('test_collection');
 
-        var offer1 = new offerCollection({
+        var offer1 = {
             sellerName : 'mountainsrgreat2010',
             sellerFeedback :527,
             itemId : '381064177054',
@@ -26,14 +26,17 @@ router.get('/', function(req, res) {
             savingPrice:10,
             boughtQty:5,
             totalQty:100
+        };
+
+        offerCollection.insert(offer1, function(err, result){
+            if(err)
+                throw err;
+            console.log("entry saved");
+            res.redirect(proposalURL+'?action=accept');
+
         });
 
-        offer1.save(function(err, offerValue) {
-            if (err) return console.error(err);
-            console.log(offerValue);
-        });
-
-        offerCollection.find(function(err, thor) {
+        offerCollection.findOne({itemId : '381064177054'}, function(err, thor) {
             if (err) return console.error(err);
             res.send(thor);
         });
