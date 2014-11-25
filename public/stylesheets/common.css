@@ -1,0 +1,18 @@
+.central-area {
+    width: 1200px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+    align: left;
+}
+.price {
+	font-family: OpenSansSemiBold,'Helvetica Neue',Arial,Helvetica,FreeSans,sans-serif;
+    font-size: 48px;
+	line-height: 48px;
+	margin-bottom: 10px;
+}
