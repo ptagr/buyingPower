@@ -36,7 +36,7 @@
       <file leaf-file-name="optin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/optin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1020">
               <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding />
             </state>
@@ -68,11 +68,9 @@
       <file leaf-file-name="optin.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/optin.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="4380" max-vertical-offset="7275">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4380" max-vertical-offset="7275">
               <caret line="308" column="101" selection-start-line="308" selection-start-column="101" selection-end-line="308" selection-end-column="101" />
-              <folding>
-                <marker date="1416904510000" expanded="false" signature="1269:1339" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,17 +78,17 @@
       <file leaf-file-name="ebay_default.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/ebay_default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="300" max-vertical-offset="1065">
+            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1065">
               <caret line="20" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirm.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="confirm.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/confirm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35450518" vertical-offset="0" max-vertical-offset="1020">
+            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1020">
               <caret line="16" column="35" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="35" />
               <folding />
             </state>
@@ -117,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proposalView.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="proposalView.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/proposalView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.666666" vertical-offset="665" max-vertical-offset="1305">
+            <state vertical-scroll-proportion="1.6640625" vertical-offset="0" max-vertical-offset="1305">
               <caret line="71" column="26" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="26" />
               <folding>
                 <marker date="1416893560000" expanded="false" signature="1078:1148" placeholder="..." />
@@ -204,6 +202,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,7 +269,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -530,11 +528,12 @@
       <workItem from="1416897847000" duration="4717000" />
       <workItem from="1416903226169" duration="548000" />
       <workItem from="1416903960246" duration="579000" />
+      <workItem from="1416939218585" duration="83000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31454000" />
+    <option name="totallyTimeSpent" value="31537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="820" extended-state="6" />
@@ -912,22 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/js/negotiator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="3615">
-          <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="450">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/confirm.ejs">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -935,18 +918,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5078125" vertical-offset="4795" max-vertical-offset="7275">
           <caret line="298" column="71" selection-start-line="298" selection-start-column="71" selection-end-line="298" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1416903004000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -955,16 +927,6 @@
         <state vertical-scroll-proportion="-0.0" vertical-offset="300" max-vertical-offset="1065">
           <caret line="20" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/proposalView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.666666" vertical-offset="665" max-vertical-offset="1305">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="26" />
-          <folding>
-            <marker date="1416893560000" expanded="false" signature="1078:1148" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,11 +943,9 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="4380" max-vertical-offset="7275">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4380" max-vertical-offset="7275">
           <caret line="308" column="101" selection-start-line="308" selection-start-column="101" selection-end-line="308" selection-end-column="101" />
-          <folding>
-            <marker date="1416904510000" expanded="false" signature="1269:1339" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -999,9 +959,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/confirm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35450518" vertical-offset="0" max-vertical-offset="1020">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1020">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="450">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/js/negotiator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="3615">
+          <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/proposalView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6640625" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="26" />
+          <folding>
+            <marker date="1416893560000" expanded="false" signature="1078:1148" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
