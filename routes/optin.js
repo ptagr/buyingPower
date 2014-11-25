@@ -10,7 +10,7 @@ exports.optin = function(req, res) {
 function getResponse(itemid, res) {
 	var count =0;
 	request({
-        url: "http://10.225.82.190:3000/getoffer?itemid=381064177054",
+        url: "http://protected-oasis-8857.herokuapp.com/getoffer?itemid=381064177054",
         json: true
     }, function (error2, response2, body2) {
     	console.log(body2);
