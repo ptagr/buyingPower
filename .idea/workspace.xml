@@ -56,8 +56,8 @@
       <file leaf-file-name="optin.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/optin.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.625" vertical-offset="215" max-vertical-offset="7575">
-              <caret line="41" column="172" selection-start-line="41" selection-start-column="172" selection-end-line="41" selection-end-column="172" />
+            <state vertical-scroll-proportion="0.6015625" vertical-offset="215" max-vertical-offset="7575">
+              <caret line="40" column="91" selection-start-line="40" selection-start-column="91" selection-end-line="40" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#1;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -592,12 +592,12 @@
       <workItem from="1416939218585" duration="83000" />
       <workItem from="1416939563113" duration="3338000" />
       <workItem from="1416948370802" duration="171000" />
-      <workItem from="1416949275011" duration="157000" />
+      <workItem from="1416949275011" duration="221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35301000" />
+    <option name="totallyTimeSpent" value="35365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="820" extended-state="6" />
@@ -1045,8 +1045,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.625" vertical-offset="215" max-vertical-offset="7575">
-          <caret line="41" column="172" selection-start-line="41" selection-start-column="172" selection-end-line="41" selection-end-column="172" />
+        <state vertical-scroll-proportion="0.6015625" vertical-offset="215" max-vertical-offset="7575">
+          <caret line="40" column="91" selection-start-line="40" selection-start-column="91" selection-end-line="40" selection-end-column="91" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
