@@ -40,7 +40,7 @@ app.use(enableCORS);
 app.use('/', routes);
 app.use('/users', users);
 app.use('/items', items);
-app.use('/sendProposal', proposal);
+app.use('/proposal', proposal);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

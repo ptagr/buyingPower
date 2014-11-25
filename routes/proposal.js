@@ -4,11 +4,7 @@ var request = require("request");
 var _ = require('underscore')._;
 var postmark = require("postmark")(process.env.POSTMARK_API_KEY);
 
-
-
-
-
-router.route('/')
+router.route('/send')
     .get(function (req, res) {
 
         var emailText = 'Hi '+ req.query.sellerName + ',\n'+
@@ -36,6 +32,30 @@ router.route('/')
         });
        res.send(200);
     });
+
+
+router.route('/accept')
+    .get(function(req, res){
+        var mongodb = require('mongodb')
+            , MongoClient = mongodb.MongoClient;
+
+        MongoClient.connect(process.env.MONGOSOUP_URL, function(err, db) {
+            if(err) {
+                console.log("failed to connect to the database");
+            } else {
+                console.log("connected to database");
+            }
+            var collection = db.collection('grades')
+            collection.find({}).toArray(function(err, docs) {
+                if (err) {
+                    return console.error(err)
+                }
+                docs.forEach(function(doc) {
+                    console.log('found document: ', doc)
+                });
+            });
+        });
+    })
 
 
 
