@@ -3,6 +3,24 @@ var router = express.Router();
 var request = require("request");
 var _ = require('underscore')._;
 var postmark = require("postmark")(process.env.POSTMARK_API_KEY);
+var mongoose = require('mongoose');
+var getItemURL = 'http://open.api.ebay.com/shopping?callname=GetSingleItem&responseencoding=JSON&appid=hackatha-b572-420a-8b2c-229be6d4a6b7&siteid=0&version=515&IncludeSelector=Details,ShippingCosts&';
+
+
+
+var offerSchema = new mongoose.Schema({
+    sellerName:{type:String},
+    sellerFeedback: Number,
+    itemId : { type: String },
+    title: { type: String },
+    imgUrl:{type:String},
+    itemDesc:{type:String},
+    listPrice: Number,
+    offerPrice: Number,
+    savingPrice: Number,
+    boughtQty: Number,
+    totalQty:Number
+});
 
 router.route('/send')
     .get(function (req, res) {
@@ -45,18 +63,53 @@ router.route('/accept')
             } else {
                 console.log("connected to database");
             }
-            var collection = db.collection('grades')
-            collection.find({}).toArray(function(err, docs) {
-                if (err) {
-                    return console.error(err)
+
+            var itemURL = getItemURL + 'ItemID=' + req.query.itemId;
+
+            request({
+                url: itemURL,
+                json: true
+            }, function (error2, response2, body2) {
+
+
+                if (!error2 && response2.statusCode === 200) {
+                    var responseObject = {};
+                    var itm = body2.Item;
+                    var collection = db.collection('test_collection');
+                    var d = new Date();
+                    collection.insert({
+                        sellerName : itm.Seller.UserID,
+                        itemId : itm.ItemID,
+                        sellerFeedback : itm.Seller.FeedbackScore,
+                        title: itm.Title,
+                        imgUrl: itm.PictureURL[0],
+                        itemDesc: itm.Title,
+                        listPrice: trunc(itm.CurrentPrice.Value),
+                        offerPrice: itm.CurrentPrice.Value - req.query.discount ,
+                        savingPrice: req.query.discount,
+                        boughtQty: 0,
+                        totalQty: req.query.totalQty,
+                        startTime: d.toString(),
+                        totalTime: req.query.duration
+                    })
+
                 }
-                docs.forEach(function(doc) {
-                    console.log('found document: ', doc)
-                });
             });
+
         });
     })
 
+var trunc = function(val){
+    return parseFloat(val).toFixed(2);
+};
 
+var truncStr = function(val){
+    if(val.length > 50){
+        return val.substring(0,47) + "...";
+    }else{
+        return val.substring(0,50);
+    }
+
+}
 
 module.exports = router;
