@@ -110,7 +110,7 @@
       <file leaf-file-name="negotiator.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/js/negotiator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9188034" vertical-offset="990" max-vertical-offset="3675">
+            <state vertical-scroll-proportion="0.491453" vertical-offset="0" max-vertical-offset="3675">
               <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
               <folding />
             </state>
@@ -505,12 +505,12 @@
       <workItem from="1416880162364" duration="1357000" />
       <workItem from="1416890912593" duration="382000" />
       <workItem from="1416897402847" duration="116000" />
-      <workItem from="1416897847000" duration="4689000" />
+      <workItem from="1416897847000" duration="4717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30186000" />
+    <option name="totallyTimeSpent" value="30214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="822" extended-state="6" />
@@ -1007,7 +1007,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/js/negotiator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9188034" vertical-offset="990" max-vertical-offset="3675">
+        <state vertical-scroll-proportion="0.491453" vertical-offset="0" max-vertical-offset="3675">
           <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
           <folding />
         </state>
