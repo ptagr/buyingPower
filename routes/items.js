@@ -56,7 +56,7 @@ function callAjax(req, res, itemArray){
                     title: truncStr(itm.Title),
                     image: itm.PictureURL[0],
                     condition: 'New',
-                    price: trunc(itm.CurrentPrice.Value)
+                    price: trunc(itm.CurrentPrice)
                     //shippingInfo : item.shippingInfo[0]
                 };
 

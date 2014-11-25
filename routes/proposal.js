@@ -32,7 +32,7 @@ router.route('/send')
             'Duration: '+ req.query.duration +'\n' +
             'Discount: '+ req.query.discount +'\n' +
             'ACCEPT	: '+acceptLink+ '\n' +
-            'REJECT : http://protected-oasis-8857.herokuapp.com/proposal?action=reject'+ '\n'
+            'REJECT : http://protected-oasis-8857.herokuapp.com/proposal?action=reject'+ '\n\n' +
             'Thanks,'+ '\n'+
             'eBay BuyingPower Team';
         console.log(emailText);
