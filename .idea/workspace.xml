@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="optin.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="optin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/optin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27061856" vertical-offset="75" max-vertical-offset="1020">
-              <caret line="12" column="84" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1020">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -97,6 +97,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.80494505" vertical-offset="37" max-vertical-offset="450">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="negotiator.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/js/negotiator.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -130,7 +140,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/lib/emailer.coffee.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/proposalView.html" />
         <option value="$PROJECT_DIR$/routes/proposal.js" />
         <option value="$PROJECT_DIR$/views/negotiatorView.html" />
@@ -139,6 +148,7 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/optin.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -495,12 +505,12 @@
       <workItem from="1416880162364" duration="1357000" />
       <workItem from="1416890912593" duration="382000" />
       <workItem from="1416897402847" duration="116000" />
-      <workItem from="1416897847000" duration="3854000" />
+      <workItem from="1416897847000" duration="3950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29351000" />
+    <option name="totallyTimeSpent" value="29447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="822" extended-state="6" />
@@ -841,13 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71428573" vertical-offset="0" max-vertical-offset="441">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/ebay_default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1065">
@@ -968,8 +971,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/optin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27061856" vertical-offset="75" max-vertical-offset="1020">
-          <caret line="12" column="84" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1020">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80494505" vertical-offset="37" max-vertical-offset="450">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding />
         </state>
       </provider>
