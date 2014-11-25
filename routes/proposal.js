@@ -5,7 +5,7 @@ var _ = require('underscore')._;
 var postmark = require("postmark")(process.env.POSTMARK_API_KEY);
 var mongoose = require('mongoose');
 var getItemURL = 'http://open.api.ebay.com/shopping?callname=GetSingleItem&responseencoding=JSON&appid=hackatha-b572-420a-8b2c-229be6d4a6b7&siteid=0&version=515&IncludeSelector=Details,ShippingCosts&';
-var proposalURL = 'https://protected-oasis-8857.herokuapp.com/proposalView.html';
+var proposalURL = 'http://protected-oasis-8857.herokuapp.com/proposalView.html';
 
 
 var offerSchema = new mongoose.Schema({
@@ -24,14 +24,15 @@ var offerSchema = new mongoose.Schema({
 
 router.route('/send')
     .get(function (req, res) {
-        var acceptLink = 'https://protected-oasis-8857.herokuapp.com/proposal/accept?itemId='+req.query.itemid+'&discount='+req.query.discount+'&totalQty='+req.query.quantity+'&duration='+req.query.duration;
+        var acceptLink = 'http://protected-oasis-8857.herokuapp.com/proposal/accept?itemId='+req.query.itemid+'&discount='+req.query.discount+'&totalQty='+req.query.quantity+'&duration='+req.query.duration;
         var emailText = 'Hi '+ req.query.sellerName + ',\n'+
             'Negotiator ' + req.query.negotiatorName + ' has created a group deal for your item '+ req.query.itemid + '.\n'+
             'Please choose to Accept or Reject after reviewing the proposal as detailed below:'+'\n' +
             'Quantity: '+ req.query.quantity +'\n' +
             'Duration: '+ req.query.duration +'\n' +
             'Discount: '+ req.query.discount +'\n' +
-            'ACCEPT	: '+acceptLink+
+            'ACCEPT	: '+acceptLink+ '\n' +
+            'REJECT : http://protected-oasis-8857.herokuapp.com/proposal?action=reject'+ '\n'
             'Thanks,'+ '\n'+
             'eBay BuyingPower Team';
         console.log(emailText);
