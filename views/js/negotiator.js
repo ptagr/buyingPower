@@ -138,39 +138,42 @@
                 var quantity = $(proposalInfo).find('.quantity').find('input').val();
                 var discount = $(proposalInfo).find('.discount').find('input').val();
 
+                // To send to the server
+                var durationStr = '';
+
                 switch(duration) {
                     case '1 Day':
-                        duration = '1d';
+                        durationStr = '1d';
                         break;
                     case '2 Days':
-                        duration = '2d';
+                        durationStr = '2d';
                         break;
                     case '3 Days':
-                        duration = '3d';
+                        durationStr = '3d';
                         break;
                     case '4 Days':
-                        duration = '4d';
+                        durationStr = '4d';
                         break;
                     case '5 Days':
-                        duration = '5d';
+                        durationStr = '5d';
                         break;
                     case '6 Days':
-                        duration = '6d';
+                        durationStr = '6d';
                         break;
                     case '1 Week':
-                        duration = '1w';
+                        durationStr = '1w';
                         break;
                     case '2 Weeks':
-                        duration = '2w';
+                        durationStr = '2w';
                         break;
                     case '3 Weeks':
-                        duration = '3w';
+                        durationStr = '3w';
                         break;
                     case '1 Month':
-                        duration = '1m';
+                        durationStr = '1m';
                         break;
                     default:
-                        duration = '1w';
+                        durationStr = '1w';
                 }
 
                 // Construct URL with all the data we need
@@ -178,7 +181,7 @@
                         '&negotiatorName=' + 'Connie' + 
                         '&itemid=' + itemId + 
                         '&quantity=' + quantity + 
-                        '&duration=' + duration + 
+                        '&duration=' + durationStr + 
                         '&discount=' + discount;
 
                 $.ajax({
