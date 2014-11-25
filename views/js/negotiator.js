@@ -132,7 +132,12 @@
                 $('.proposal .item-name').html(itemInfo.iteminfo.title);
                 $('.proposal .item-name').attr('data-id', itemInfo.iteminfo.id);
                 $('.proposal .item-price').html('$' + itemInfo.iteminfo.price);
-                $('.proposal .item-shipping').html('Shipping: $' + itemInfo.shippingInfo.cost);
+
+                if (itemInfo.shippingInfo.cost == '0.00') {
+                    $('.proposal .item-shipping').html('Shipping: <b>Free</b>');
+                } else {
+                    $('.proposal .item-shipping').html('Shipping: $' + itemInfo.shippingInfo.cost);
+                }
             });
 
             $('.submit-btn').on('click', function() {

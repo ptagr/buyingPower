@@ -90,6 +90,7 @@
 
 .proposal .item-img {
     float: left;
+    max-width: 134px;
 }
 
 .proposal .item-info {
