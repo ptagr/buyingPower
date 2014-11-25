@@ -341,7 +341,8 @@
 
 
 
-					<div class="c-std">
+					<div class="c-std lower-panel">
+						<div class="countdown"></div>
 
 						<b> Buyers committed so far: </b><span><%= boughtQty %></span> <br>
 
@@ -474,6 +475,15 @@
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script src="./libs/rendro-countdown/dest/jquery.countdown.js"></script>
+    <script>
+        $(function() {
+            $('.countdown').countdown({
+                date: "November 30, 2014 15:03:26"
+            });
+        });
+    </script>
 
 </body>
 

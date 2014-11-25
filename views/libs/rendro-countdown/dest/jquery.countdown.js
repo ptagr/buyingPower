@@ -7,12 +7,22 @@ var defaultOptions = {
     return;
   },
   render: function (date) {
-    this.el.innerHTML = 
-                        // date.years + " years, " +
-                        date.days  + " days, " +
-                        this.leadingZeros(date.hours) + " hours, " +
-                        this.leadingZeros(date.min) + " min and " +
-                        this.leadingZeros(date.sec) + " sec";
+    // this.el.innerHTML = 
+    //                     date.years + " years, " +
+    //                     date.days  + " days, " +
+    //                     this.leadingZeros(date.hours) + " hours, " +
+    //                     this.leadingZeros(date.min) + " min and " +
+    //                     this.leadingZeros(date.sec) + " sec";
+
+    this.el.innerHTML = '<div>' + 
+      date.days + 
+      '<span>days</span></div><div>' + 
+      this.leadingZeros(date.hours) + 
+      '<span>hrs</span></div><div>' + 
+      this.leadingZeros(date.min) + 
+      '<span>min</span></div><div>' + 
+      this.leadingZeros(date.sec) + 
+      '<span>sec</span></div></div>';
   }
 };
 
