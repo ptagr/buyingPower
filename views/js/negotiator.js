@@ -18,9 +18,10 @@
         }
 
         var urlVars = getUrlVars();
+        var catid = urlVars['catid'] == undefined ? 11071 : urlVars['catid'];
 
         $.ajax({
-            url: 'https://protected-oasis-8857.herokuapp.com/items?catid='+urlVars['catid'],
+            url: 'https://protected-oasis-8857.herokuapp.com/items?catid='+catid,
             // url: 'http://localhost:3000/items',
             type: 'GET',
             // dataType: 'json',
