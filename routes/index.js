@@ -65,6 +65,18 @@ router.get('/getOffer*', function(req,res){
 
 });
 
+
+
+router.get('/removeAllOffers', function(req,res){
+    MongoClient.connect(process.env.MONGOSOUP_URL, function(err, db) {
+        if(err) {
+            console.log("There is an error");
+        }
+        var offerCollection = db.collection('test_collection');
+        offerCollection.remove({});
+    });
+});
+
 router.get('/updateOffer*', function(req,res){
     var itemIdVar = req.param("itemid");
 
@@ -91,6 +103,11 @@ router.get('/updateOffer*', function(req,res){
 
 
 });
+
+
+
+
+
 
 router.get('/submitjson*', function(req, res) {
     console.log("Hi");
