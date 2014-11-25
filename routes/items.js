@@ -100,7 +100,7 @@ var trunc = function(val){
     if(val != undefined)
         return parseFloat(val.Value).toFixed(2);
     else
-        return parseFloat('0.00').toFixed(2)
+        return '0.00';
 };
 
 var truncStr = function(val){
