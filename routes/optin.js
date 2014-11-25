@@ -14,7 +14,7 @@ function getResponse(itemid, res) {
         json: true
     }, function (error2, response2, body2) {
     	console.log(body2);
-    	res.render('optin', body2);
+            res.render('optin', body2);
     	
     });
 }
