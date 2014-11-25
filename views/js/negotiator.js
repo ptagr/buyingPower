@@ -187,11 +187,7 @@
                 $.ajax({
                     url: url,
                     type: 'GET',
-                    // dataType: 'json',
-                    // contentType: 'application/json',
-                    crossDomain: true,
-                    // origin: 'https://protected-oasis-8857.herokuapp.com',
-                    // processData: false
+                    crossDomain: true
                 })
                 .done(function(res, status) {
                 })

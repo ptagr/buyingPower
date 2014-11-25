@@ -136,3 +136,7 @@
 .submit-seller {
     font-weight: bold;
 }
+
+#dialog-message {
+    display: none;
+}
