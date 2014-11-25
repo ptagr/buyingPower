@@ -57,13 +57,21 @@
     font-size: 14px;
 }
 
+.quantity-available {
+    color: green;
+}
+
 .item-details div {
     margin-top: 5px;
 }
 
+.item-description .item-name {
+    height: 25px;
+}
+
 .seller-details h6 {
     font-weight: bold;
-    margin: -10px 0 5px;
+    margin: -7px 0 5px;
 }
 
 .seller-details {
@@ -77,6 +85,16 @@
 
 .proposal {
     display: none;
+    height: 301px;
+}
+
+.proposal .item-img {
+    float: left;
+}
+
+.proposal .item-info {
+    width: 170px;
+    margin-left: 10px;
 }
 
 .proposal-option {

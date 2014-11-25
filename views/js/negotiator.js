@@ -57,6 +57,7 @@
 
                 $('#CenterPanel').append(itemBoxHTML);
 
+                // After each group of 3, add a clearfix to make sure floats don't go nuts
                 if (i === 2 || i === 5 || i === 8) {
                     $('#CenterPanel').append('<div class="clearfix"></div>');
                 }
@@ -78,11 +79,19 @@
                 $('.item-description .item-name').html(itemInfo.iteminfo.title);
                 $('.item-description .item-price').html('$' + itemInfo.iteminfo.price);
 
-                $('.item-description .item-condition').html('Condition: ' + itemInfo.iteminfo.condition);
-                $('.item-description .quantity-available').html('Quantity Available: ' + itemInfo.quantityInfo.sold);
+                if (itemInfo.shippingInfo.cost == 0) {
+                    $('.item-description .item-shipping').html('Shipping: <b>Free</b>');
+                } else {
+                    $('.item-description .item-shipping').html('Shipping: $' + itemInfo.shippingInfo.cost);
+                }
+                
+
+                $('.item-description .item-condition').html('Condition: <b>' + itemInfo.iteminfo.condition + '</b>');
+                $('.item-description .quantity-available').html('<b>Quantity Available: ' + itemInfo.quantityInfo.available + '</b>');
 
                 $('.seller-details .seller-name').html(itemInfo.sellerinfo.name);
-                $('.seller-details .feedback-count').html('');
+                $('.seller-details .feedback-count').html(itemInfo.sellerinfo.feedbackScore);
+                $('.seller-details .feedback-rating').html(itemInfo.sellerinfo.positiveFeedbackPercent + '% Positive feedback');
             });
             $('.item-grid .item-box').on('click', function() {
                 // Hide all other checkmarks
@@ -100,9 +109,10 @@
                 // Now it's an object!
                 itemInfo = JSON.parse(itemInfo);
 
-                $('.proposal .item-img').attr('src', itemInfo.galleryURL);;
-                $('.proposal .item-name').html(itemInfo.title);
-                $('.proposal .item-price').html('$' + itemInfo.sellingStatus[0].currentPrice[0].__value__);
+                $('.proposal .item-img').attr('src', itemInfo.iteminfo.image);;
+                $('.proposal .item-name').html(itemInfo.iteminfo.title);
+                $('.proposal .item-price').html('$' + itemInfo.iteminfo.price);
+                $('.proposal .item-shipping').html('Shipping: $' + itemInfo.shippingInfo.cost);
             });
         }
     });
