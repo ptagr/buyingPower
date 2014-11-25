@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-var items = require('./routes/items')
+var items = require('./routes/items');
+var proposal = require('./routes/proposal');
 
 
 // Enables CORS
@@ -39,6 +40,7 @@ app.use(enableCORS);
 app.use('/', routes);
 app.use('/users', users);
 app.use('/items', items);
+app.use('/sendProposal', proposal);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
