@@ -15,11 +15,11 @@ var defaultOptions = {
     //                     this.leadingZeros(date.sec) + " sec";
 
     this.el.innerHTML = '<div>' + 
-      date.days + 
+      date.days + ' :' +
       '<span>days</span></div><div>' + 
-      this.leadingZeros(date.hours) + 
+      this.leadingZeros(date.hours) +  ' :' +
       '<span>hrs</span></div><div>' + 
-      this.leadingZeros(date.min) + 
+      this.leadingZeros(date.min) +  ' :' +
       '<span>min</span></div><div>' + 
       this.leadingZeros(date.sec) + 
       '<span>sec</span></div></div>';
