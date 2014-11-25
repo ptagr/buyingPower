@@ -49,6 +49,11 @@
 	text-align: center;
 }
 
+.feedback-star {
+    position: absolute;
+    margin: -3px 0 0 -2px;
+}
+
 .lower-panel {
 	margin-top: -15px;
 }
