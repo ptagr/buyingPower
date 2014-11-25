@@ -56,6 +56,7 @@ router.route('/accept')
     .get(function(req, res){
         var mongodb = require('mongodb')
             , MongoClient = mongodb.MongoClient;
+        console.log(process.env.MONGOSOUP_URL);
 
         MongoClient.connect(process.env.MONGOSOUP_URL, function(err, db) {
             if(err) {
@@ -91,7 +92,11 @@ router.route('/accept')
                         totalQty: req.query.totalQty,
                         startTime: d.toString(),
                         totalTime: req.query.duration
-                    })
+                    }, function(err, result){
+                        if(err)
+                            throw err;
+                        console.log("entry saved");
+                    });
 
                 }
             });
