@@ -24,14 +24,14 @@ var offerSchema = new mongoose.Schema({
 
 router.route('/send')
     .get(function (req, res) {
-
+        var acceptLink = 'https://protected-oasis-8857.herokuapp.com/proposal/accept?itemId='+req.query.itemid+'&discount='+req.query.discount+'&totalQty='+req.query.quantity+'&duration='+req.query.duration;
         var emailText = 'Hi '+ req.query.sellerName + ',\n'+
             'Negotiator ' + req.query.negotiatorName + ' has created a group deal for your item '+ req.query.itemid + '.\n'+
             'Please choose to Accept or Reject after reviewing the proposal as detailed below:'+'\n' +
             'Quantity: '+ req.query.quantity +'\n' +
             'Duration: '+ req.query.duration +'\n' +
             'Discount: '+ req.query.discount +'\n' +
-            'ACCEPT	REJECT'+ '\n\n'+
+            'ACCEPT	: <a href = \"'+acceptLink+'\"> Click here </a>\n\n'+
             'Thanks,'+ '\n'+
             'eBay BuyingPower Team';
         console.log(emailText);
