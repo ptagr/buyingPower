@@ -75,7 +75,7 @@ router.get('/updateOffer*', function(req,res){
         var offerCollection = db.collection('test_collection');
         offerCollection.update(
             {itemId: itemIdVar},
-            { $inc: { boughtQty: -1} }, function(error, updatedValue){
+            { $inc: { boughtQty: 1} }, function(error, updatedValue){
                 if(error) {
                     console.log("There is an error");
                 }
