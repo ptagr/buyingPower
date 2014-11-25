@@ -1,0 +1,50 @@
+.central-area {
+	width: 1200px;
+}
+
+.float-left {
+	float: left;
+	width: 600px;
+	padding: 5px;
+	margin-left: 125px;
+	box-sizing: border-box;
+}
+
+.float-right {
+	float: left;
+	width: 360px;
+	margin-left: 10px;
+}
+
+.padding-div {
+	padding: 5px;
+}
+
+.discounted-price {
+	color: #F0812B;
+	font-family: "ProximaNovaSoftBold", "arial rounded mt bold", helvetica,
+		arial, sans-serif;
+	font-size: 55px;
+	font-weight: bold;
+}
+
+.total-qty {
+	color: #F0812B;
+	font-family: "ProximaNovaSoftBold", "arial rounded mt bold", helvetica,
+		arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.join-btn {
+	font-size: 18px;
+	padding: 10px 80px;
+}
+
+.image-large {
+	max-width: 580px;
+}
+
+.text-space {
+	text-align: center;
+}
