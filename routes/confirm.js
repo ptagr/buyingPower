@@ -2,15 +2,15 @@ var request = require("request");
 var http = require('http');
 
 exports.confirm = function(req, res) {
-	console.log(req.params.itemid);
-	getResponse(req.params.itemid, res);
+	console.log(req.query.itemid);
+	getResponse(req.query.itemid, res);
   
 };
 
 function getResponse(itemid, res) {
 	var count =0;
 	request({
-        url: "http://10.225.82.190:3000/updateoffer?itemid=381064177054",
+        url: "http://protected-oasis-8857.herokuapp.com/updateoffer?itemid="+itemid,
         json: true
     }, function (error2, response2, body2) {
     	console.log(body2);
