@@ -5,7 +5,7 @@ var _ = require('underscore')._;
 var postmark = require("postmark")(process.env.POSTMARK_API_KEY);
 var mongoose = require('mongoose');
 var getItemURL = 'http://open.api.ebay.com/shopping?callname=GetSingleItem&responseencoding=JSON&appid=hackatha-b572-420a-8b2c-229be6d4a6b7&siteid=0&version=515&IncludeSelector=Details,ShippingCosts&';
-
+var proposalURL = 'https://protected-oasis-8857.herokuapp.com/proposalView.html';
 
 
 var offerSchema = new mongoose.Schema({
@@ -31,7 +31,7 @@ router.route('/send')
             'Quantity: '+ req.query.quantity +'\n' +
             'Duration: '+ req.query.duration +'\n' +
             'Discount: '+ req.query.discount +'\n' +
-            'ACCEPT	: <a href = \"'+acceptLink+'\"> Click here </a>\n\n'+
+            'ACCEPT	: '+acceptLink+
             'Thanks,'+ '\n'+
             'eBay BuyingPower Team';
         console.log(emailText);
@@ -97,14 +97,21 @@ router.route('/accept')
                         if(err)
                             throw err;
                         console.log("entry saved");
-                        res.send(resource);
+                        res.redirect(proposalURL+'?action=accept');
+
                     });
 
                 }
             });
 
         });
-    })
+    });
+
+
+router.route('/reject')
+    .get(function(req, res){
+       res.redirect(proposalURL+'?action=reject')
+    });
 
 var trunc = function(val){
     return parseFloat(val).toFixed(2);
