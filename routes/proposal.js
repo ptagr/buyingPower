@@ -8,7 +8,7 @@ var postmark = require("postmark")(process.env.POSTMARK_API_KEY);
 router.route('/')
     .get(function (req, res) {
         postmark.send({
-            "From": "update@ebayNegotiator.com",
+            "From": "PUNAGRAWAL@EBAY.COM",
             "To": "punit21@outlook.com",
             "Subject": "Hello from Postmark",
             "TextBody": "Hello!",
