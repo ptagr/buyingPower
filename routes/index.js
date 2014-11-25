@@ -2,14 +2,14 @@ var express = require('express');
 var router = express.Router();
 var url = require('url');
 var app = require('../app');
-var mongoose = require('mongoose');
-
+var mongodb = require('mongodb')
+    , MongoClient = mongodb.MongoClient;
 var mongoURL = process.env.MONGOSOUP_URL;
 
 /* GET home page. */
 router.get('/', function(req, res) {
-    mongoose.connect(mongoURL, function(error, db){
-        if(error) {
+    MongoClient.connect(process.env.MONGOSOUP_URL, function(err, db) {
+        if(err) {
             console.log("There is an error");
         }
         var offerCollection = db.collection('test_collection');
@@ -47,8 +47,8 @@ router.get('/', function(req, res) {
 router.get('/getOffer*', function(req,res){
     var itemIdVar = req.param("itemid");
 
-    mongoose.connect(mongoURL, function(error, DB){
-        if(error) {
+    MongoClient.connect(process.env.MONGOSOUP_URL, function(err, db) {
+        if(err) {
             console.log("There is an error");
         }
         var offerCollection = db.collection('test_collection');
@@ -67,8 +67,8 @@ router.get('/getOffer*', function(req,res){
 router.get('/updateOffer*', function(req,res){
     var itemIdVar = req.param("itemid");
 
-    mongoose.connect(mongoURL, function(error, db){
-        if(error) {
+    MongoClient.connect(process.env.MONGOSOUP_URL, function(err, db) {
+        if(err) {
             console.log("There is an error");
         }
         var offerCollection = db.collection('test_collection');
