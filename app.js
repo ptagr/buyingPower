@@ -39,6 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(enableCORS);
 
+app.use('/', routes);
 app.use('/users', users);
 app.use('/items', items);
 app.use('/proposal', proposal);
