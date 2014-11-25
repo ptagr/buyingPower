@@ -81,6 +81,7 @@ router.get('/getOffer*', function(req,res){
             }
             console.log(result);
             db.close();
+            res.send(200);
         });
     });
 });
