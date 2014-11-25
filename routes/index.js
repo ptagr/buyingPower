@@ -37,6 +37,7 @@ router.get('/', function(req, res) {
         offerCollection.findOne({itemId : '381064177054'}, function(err, thor) {
             if (err) return console.error(err);
             res.send(thor);
+            db.close();
         });
 
     });
@@ -58,6 +59,7 @@ router.get('/getOffer*', function(req,res){
             if (err) return console.error(err);
             res.send(thor);
             console.log(thor);
+            db.close();
         });
     });
 
@@ -67,13 +69,19 @@ router.get('/getOffer*', function(req,res){
 
 
 
-router.get('/removeAllOffers', function(req,res){
+    router.get('/removeAllOffers', function(req,res){
     MongoClient.connect(process.env.MONGOSOUP_URL, function(err, db) {
         if(err) {
             console.log("There is an error");
         }
         var offerCollection = db.collection('test_collection');
-        offerCollection.remove({});
+        offerCollection.remove({}, function(err, result) {
+            if (err) {
+                console.log(err);
+            }
+            console.log(result);
+            db.close();
+        });
     });
 });
 
@@ -96,6 +104,7 @@ router.get('/updateOffer*', function(req,res){
                     if (err) return console.error(err);
                     res.send(thor);
                     console.log(thor);
+                    db.close();
                 });}
         );
     });
