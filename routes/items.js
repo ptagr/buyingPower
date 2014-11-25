@@ -4,7 +4,7 @@ var request = require("request");
 var _ = require('underscore')._;
 
 
-var requestURL = 'http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=hackatha-b572-420a-8b2c-229be6d4a6b7&OPERATION-NAME=findItemsAdvanced&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&paginationInput.entriesPerPage=9&itemFilter(0).name=ListingType&itemFilter.value=FixedPrice&outputSelector=SellerInfocategoryId=';
+var requestURL = 'http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=hackatha-b572-420a-8b2c-229be6d4a6b7&OPERATION-NAME=findItemsAdvanced&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&paginationInput.entriesPerPage=9&itemFilter(0).name=ListingType&itemFilter.value=FixedPrice&outputSelector=SellerInfo&categoryId=';
 
 var itemArray2 = ['161495451444', '381064177054', '271659087994', '191424275863', '321596068196', '261673779913', '271681650066',
     '111526153929', '221614920705'];
