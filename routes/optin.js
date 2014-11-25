@@ -2,8 +2,8 @@ var request = require("request");
 var http = require('http');
 
 exports.optin = function(req, res) {
-	console.log(req.params.itemid);
-	getResponse(req.params.itemid, res);
+	console.log(req.query.itemid);
+	getResponse(req.query.itemid, res);
   
 };
 
