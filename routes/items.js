@@ -9,7 +9,7 @@ var requestURL = 'http://svcs.ebay.com/services/search/FindingService/v1?SECURIT
 var itemArray = ['161495451444', '381064177054', '271659087994', '191424275863', '321596068196', '261673779913', '271681650066',
     '111526153929', '221614920705'];
 
-var getItemURL = 'http://open.api.ebay.com/shopping?callname=GetSingleItem&responseencoding=JSON&appid=hackatha-b572-420a-8b2c-229be6d4a6b7&siteid=0&version=515&IncludeSelector=Details&';
+var getItemURL = 'http://open.api.ebay.com/shopping?callname=GetSingleItem&responseencoding=JSON&appid=hackatha-b572-420a-8b2c-229be6d4a6b7&siteid=0&version=515&IncludeSelector=Details,ShippingCosts&';
 
 router.route('/')
     .get(function (req, res) {
@@ -43,16 +43,21 @@ router.route('/')
                     responseObject.sellerinfo = {
                         name: itm.Seller.UserID,
                         link: 'http://www.ebay.com/usr/' + itm.Seller.UserID,
-                        feedbackScore: itm.Seller.UserID.FeedbackScore,
-                        positiveFeedbackPercent: itm.Seller.UserID.PositiveFeedbackPercent
+                        feedbackScore: itm.Seller.FeedbackScore,
+                        positiveFeedbackPercent: itm.Seller.PositiveFeedbackPercent
 
                     };
 
                     responseObject.quantityInfo = {
                         sold: itm.QuantitySold,
-                        availableHint: itm.QuantityAvailableHint,
-                        availableThreshold: itm.QuantityThreshold
+                        available: '50'
                     };
+
+                    responseObject.shippingInfo = {
+                        cost: itm.ShippingCostSummary.ShippingServiceCost.Value,
+                        type: itm.ShippingCostSummary.ShippingType
+                    }
+
 
                     responsearray.push(responseObject);
                     console.log("hello" + ajaxCallsRemaining);
