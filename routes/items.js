@@ -33,10 +33,10 @@ router.route('/')
 
                     responseObject.iteminfo = {
                         id: itm.ItemID,
-                        title: itm.Title,
+                        title: truncStr(itm.Title),
                         image: itm.PictureURL[0],
                         condition: 'New',
-                        price: itm.CurrentPrice.Value
+                        price: trunc(itm.CurrentPrice.Value)
                         //shippingInfo : item.shippingInfo[0]
                     };
 
@@ -54,7 +54,7 @@ router.route('/')
                     };
 
                     responseObject.shippingInfo = {
-                        cost: itm.ShippingCostSummary.ShippingServiceCost.Value,
+                        cost: trunc(itm.ShippingCostSummary.ShippingServiceCost.Value),
                         type: itm.ShippingCostSummary.ShippingType
                     }
 
@@ -78,5 +78,18 @@ router.route('/')
         //res.send(responsearray);
 
     });
+
+var trunc = function(val){
+    return parseFloat(val).toFixed(2);
+};
+
+var truncStr = function(val){
+    if(val.length > 50){
+        return val.substring(0,47) + "...";
+    }else{
+        return val.substring(0,50);
+    }
+
+}
 
 module.exports = router;
