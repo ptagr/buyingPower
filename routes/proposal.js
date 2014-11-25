@@ -78,7 +78,7 @@ router.route('/accept')
                     var itm = body2.Item;
                     var collection = db.collection('test_collection');
                     var d = new Date();
-                    collection.insert({
+                    var resource = {
                         sellerName : itm.Seller.UserID,
                         itemId : itm.ItemID,
                         sellerFeedback : itm.Seller.FeedbackScore,
@@ -92,10 +92,12 @@ router.route('/accept')
                         totalQty: req.query.totalQty,
                         startTime: d.toString(),
                         totalTime: req.query.duration
-                    }, function(err, result){
+                    };
+                    collection.insert(resource, function(err, result){
                         if(err)
                             throw err;
                         console.log("entry saved");
+                        res.send(resource);
                     });
 
                 }
