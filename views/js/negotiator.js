@@ -138,6 +138,41 @@
                 var quantity = $(proposalInfo).find('.quantity').find('input').val();
                 var discount = $(proposalInfo).find('.discount').find('input').val();
 
+                switch(duration) {
+                    case '1 Day':
+                        duration = '1d';
+                        break;
+                    case '2 Days':
+                        duration = '2d';
+                        break;
+                    case '3 Days':
+                        duration = '3d';
+                        break;
+                    case '4 Days':
+                        duration = '4d';
+                        break;
+                    case '5 Days':
+                        duration = '5d';
+                        break;
+                    case '6 Days':
+                        duration = '6d';
+                        break;
+                    case '1 Week':
+                        duration = '1w';
+                        break;
+                    case '2 Weeks':
+                        duration = '2w';
+                        break;
+                    case '3 Weeks':
+                        duration = '3w';
+                        break;
+                    case '1 Month':
+                        duration = '1m';
+                        break;
+                    default:
+                        duration = '1w';
+                }
+
                 // Construct URL with all the data we need
                 url += 'sellerName=' + sellerName + 
                         '&negotiatorName=' + 'Connie' + 
